@@ -1,0 +1,70 @@
+<template>
+    <!-- battle teams section  -->
+    <section id="battle">
+        <div class="container">
+            <div class="row justify-content-center row-gap-4 column-gap-4 ">
+            <div class="battle-text col-12 col-lg-8 mx-auto text-center mb-5">
+                <h4>Trenting Battle</h4>
+                <h2>Keep Eyes & Manage Upcoming Battle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore enim aliquid quibusdam itaque doloremque inventore? At dolore ea laboriosam beatae deserunt ullam quidem eligendi!</p>
+            </div>
+            <battleCard v-for="battle in battles" :img1="battle.team1" :img2="battle.team2" :game="battle.game"/>
+            <button>VieW All Match</button>
+        </div>
+        </div>
+        
+
+    </section>
+</template>
+
+<script>
+import battleCard from './battleCard.vue';
+    export default {
+        name:'BattleComponent',
+        components: {
+            battleCard,
+        },
+        data(){
+            return {
+                battles:[
+                    {
+                        team1: '/img/game-img/game-img-1.png',
+                        team2: '/img/game-img/game-img-2.png',
+                        game: 'Call Of Deauty'  
+                    },
+                    {
+                        team1: '/img/game-img/game-img-3.png',
+                        team2: '/img/game-img/game-img-4.png',
+                        game: 'Legendary Battles'  
+                    },
+                    {
+                        team1: '/img/game-img/game-img-5.png',
+                        team2: '/img/game-img/game-img-6.png',
+                        game: 'Nay Corral Gundown'  
+                    },
+                    {
+                        team1: '/img/game-img/game-img-7.png',
+                        team2: '/img/game-img/game-img-8.png',
+                        game: 'League of legends'  
+                    },
+                ]
+            }
+        }
+        
+    }
+</script>
+
+<style lang="scss" scoped>
+@use '../assets/styles/partials/variables' as *;
+
+#battle {
+    background-color: $colorDark;
+    button {
+        width: fit-content;
+        margin-top: 20px;
+    }
+
+
+}
+
+</style>

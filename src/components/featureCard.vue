@@ -1,7 +1,7 @@
 <template>
     <div class="mb-3 row justify-content-between">
         <div class="img-box col-2">
-            <img :src=img alt="features icon">
+            <img :src=img alt="features icon" class="w-75 w-sm-100">
         </div>
         <div class="col-10">
             <h4 class="fw-bold">{{ title }}</h4>

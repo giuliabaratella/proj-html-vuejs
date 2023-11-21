@@ -2,12 +2,14 @@
   <HeaderComponent/>
   <HeroComponent/>
   <FeaturesComponent/>
+  <BattleComponent/>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import HeroComponent from './components/HeroComponent.vue';
 import FeaturesComponent from './components/FeaturesComponent.vue';
+import BattleComponent from './components/BattleComponent.vue';
 
 
   export default {
@@ -15,6 +17,7 @@ import FeaturesComponent from './components/FeaturesComponent.vue';
       HeaderComponent,
       HeroComponent,
       FeaturesComponent,
+      BattleComponent,
     }
     
   }
