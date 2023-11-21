@@ -3,18 +3,18 @@
     <section id="battle">
         <div class="container">
             <div class="row justify-content-center row-gap-4">
-            <div class="battle-text col-12 col-lg-8 mx-auto text-center mb-5">
-                <h4>Trenting Battle</h4>
-                <h2>Keep Eyes & Manage Upcoming Battle</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore enim aliquid quibusdam itaque doloremque inventore? At dolore ea laboriosam beatae deserunt ullam quidem eligendi!</p>
+                <div class="battle-text col-12 col-lg-8 mx-auto text-center mb-5">
+                    <h4>Trenting Battle</h4>
+                    <h2>Keep Eyes & Manage Upcoming Battle</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore enim aliquid quibusdam itaque doloremque inventore? At dolore ea laboriosam beatae deserunt ullam quidem eligendi!</p>
+                </div>
+                <div class="col-12 col-lg-6" v-for="battle in battles" >
+                    <battleCard :img1="battle.team1" :img2="battle.team2" :game="battle.game"/>
+                </div>
+                <div class="col-12 text-center">
+                    <button >View All Match</button>
+                </div>
             </div>
-            <div class="col-12 col-lg-6" v-for="battle in battles" >
-                <battleCard :img1="battle.team1" :img2="battle.team2" :game="battle.game"/>
-            </div>
-            <div class="col-12 text-center">
-                <button >View All Match</button>
-            </div>
-        </div>
         </div>
         
 
@@ -64,7 +64,6 @@ import battleCard from './battleCard.vue';
 #battle {
     background-color: $colorDark;
     button {
-        // width: fit-content;
         margin-top: 20px;
     }
 

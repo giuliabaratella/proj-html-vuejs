@@ -4,6 +4,7 @@
   <FeaturesComponent/>
   <BattleComponent/>
   <QuickFactsComponent/>
+  <LiveStreamingComponent/>
 </template>
 
 <script>
@@ -12,6 +13,8 @@ import HeroComponent from './components/HeroComponent.vue';
 import FeaturesComponent from './components/FeaturesComponent.vue';
 import BattleComponent from './components/BattleComponent.vue';
 import QuickFactsComponent from './components/QuickFactsComponent.vue';
+import LiveStreamingComponent from './components/LiveStreamingComponent.vue';
+
 
 
 
@@ -22,6 +25,7 @@ import QuickFactsComponent from './components/QuickFactsComponent.vue';
       FeaturesComponent,
       BattleComponent,
       QuickFactsComponent,
+      LiveStreamingComponent,
     }
     
   }
