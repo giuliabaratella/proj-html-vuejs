@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 }
 h2 {
     font-weight: bold;
-    font-size: 4.5em;
+    font-size: 4em;
 }
 h4 {
     color: $colorHover;
@@ -29,7 +29,6 @@ h4 {
 
 }
 p{
-    font-size: 1.5em;
     color:$colorLight;
 }
 
@@ -41,8 +40,8 @@ li {
     list-style-type: none;
 }
 section{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 // buttons 

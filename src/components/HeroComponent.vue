@@ -1,4 +1,6 @@
 <template>
+    
+    <!-- hero  -->
     <div id="hero">
         <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -35,8 +37,15 @@
 #hero {
     background-image: url(../assets/images/index-banner-bg.png);
     background-size: cover;
+    
         .hero-text {
             padding-top: 200px;
+            h2{
+                font-size: 4.5em;
+            }
+            p{
+                font-size: 1.5em;
+            }
         }
 
     width: 100%;
