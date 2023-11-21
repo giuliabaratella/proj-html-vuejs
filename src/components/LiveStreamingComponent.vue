@@ -28,6 +28,7 @@
                     </div>
                     <div class="video-text-center d-flex flex-column align-items-center">
                         <div class="play-btn mb-3">
+                            <div class="play-btn-outline"></div>
                             <img src="../assets/images/play-icon.png" alt="play">
                         </div>
                         <h3>League Of Legends</h3>
@@ -87,6 +88,7 @@
             transform: translate(-50%, -50%);
             z-index: 1000;
             text-align: center;
+            
 
         }
         .video-bg{

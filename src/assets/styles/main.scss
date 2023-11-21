@@ -72,8 +72,25 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    outline-offset: 8px;
-    outline: 1px solid $colorPrimary;
+    position: relative;
+    .play-btn-outline{
+        position: absolute;
+        top: -10px;
+        left:-10px;
+        width: 70px;  
+        height: 70px;   
+        border-radius: 50%; 
+        border: 1px solid $colorPrimary;
+        animation: outline-animation 5s ease-in-out infinite;
+        @keyframes outline-animation{
+
+            50%{
+           transform: scale(1.1);
+            }
+
+        }
+    }
+
     &:hover{
         cursor: pointer;
 

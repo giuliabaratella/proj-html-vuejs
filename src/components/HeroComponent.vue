@@ -11,6 +11,7 @@
                     <div class="d-flex">
                         <button class="me-4">Explore Games</button>
                         <div class="play-btn">
+                            <div class="play-btn-outline"></div>
                             <img src="../assets/images/play-icon.png" alt="icon">
                         </div>
                     </div>
