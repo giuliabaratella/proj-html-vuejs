@@ -6,3 +6,33 @@ $fa-font-path: '../webfonts';
 @import '@fortawesome/fontawesome-free/scss/solid.scss'; 
 @import '@fortawesome/fontawesome-free/scss/regular.scss'; 
 @import '@fortawesome/fontawesome-free/scss/brands.scss';
+
+
+// general 
+body{
+    background-color: $colorBlack;
+    color: $colorWhite;
+}
+button {
+    background-color: $colorPrimary;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    outline-offset: 4px;
+    outline: 1px solid $colorPrimary;
+    border-radius: 50px;
+    transition: all 0.4s;
+        &:hover {
+            background-color: $colorHover;
+            outline-offset: 4px;
+            outline: 1px solid $colorHover;
+        }
+}
+a{
+    text-decoration: none;
+    color: $colorWhite;
+}
+li {
+    list-style-type: none;
+}
