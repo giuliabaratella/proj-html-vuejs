@@ -4,7 +4,7 @@
     <div id="hero">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="hero-text col-12 col-md-4 pb-5 pt-md-0">
+                <div class="hero-text col-12 col-md-7 col-lg-6 pb-5">
                     <h4>Game With Live Streaming</h4>
                     <h2>Future Of Esports</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi dolorum sic.</p>
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-hero-box col-md-8 d-none d-md-block">
+                <div class="img-hero-box col-lg-6 d-none d-lg-block">
                     <img src="../assets/images/index-banner-illus.png" alt="Index banner">
                 </div>
             </div>
@@ -37,9 +37,13 @@
 #hero {
     background-image: url(../assets/images/index-banner-bg.png);
     background-size: cover;
+    overflow: hidden;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     
         .hero-text {
-            padding-top: 200px;
+            z-index: 1000;
             h2{
                 font-size: 4.5em;
             }
@@ -51,7 +55,11 @@
     width: 100%;
     
         .img-hero-box{
-            width: 60%;
+            img{
+                width: 100%;
+                z-index: 500;
+                transform: scale(1.6);
+            }
 
         }
 }

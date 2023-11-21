@@ -9,7 +9,9 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis tempore enim aliquid quibusdam itaque doloremque inventore? At dolore ea laboriosam beatae deserunt ullam quidem eligendi!</p>
             </div>
             <battleCard v-for="battle in battles" :img1="battle.team1" :img2="battle.team2" :game="battle.game"/>
-            <button>VieW All Match</button>
+            <div class="col-12 text-center">
+                <button >View All Match</button>
+            </div>
         </div>
         </div>
         
@@ -60,7 +62,7 @@ import battleCard from './battleCard.vue';
 #battle {
     background-color: $colorDark;
     button {
-        width: fit-content;
+        // width: fit-content;
         margin-top: 20px;
     }
 

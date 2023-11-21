@@ -2,7 +2,7 @@
 
     <!-- features section  -->
     <section id="features">
-        <div class="container d-flex flex-column flex-lg-row-reverse align-items-center column-gap-5">
+        <div class="features-text container d-flex flex-column flex-lg-row-reverse align-items-center column-gap-5">
             <div class="px-3 w-lg-50">
                 <h4>The Ultimate Competitive Gaming platform</h4>
                 <h2>Make Your Mark On The Battle Field</h2>
@@ -52,11 +52,24 @@ import featureCard from './featureCard.vue';
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 #features{
+    .features-text {
+        z-index: 1000;
+    }
     .features-img-box{
         img{
             width: 100%;
+            z-index: 500;
         }
+        @media screen and (min-width:992px){
+            img{
+                width:150%;
+                transform: translateX(-200px);
+
+            }
+        }
+       
     }
+    
 
 }
 
