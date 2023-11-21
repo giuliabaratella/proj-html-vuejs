@@ -1,5 +1,5 @@
 <template>
-    <div class="battle-card text-center col-11 col-lg-5 py-5">
+    <div class="battle-card text-center py-5">
         <div class="row justify-content-center align-items-center">
             <div class="col-4 img-box">
                 <img :src="img1" alt="Team 1" class="team-img">
