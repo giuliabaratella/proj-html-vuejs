@@ -6,6 +6,7 @@
   <QuickFactsComponent/>
   <LiveStreamingComponent/>
   <FeedbackComponent/>
+  <AdvBanner/>
 </template>
 
 <script>
@@ -16,6 +17,8 @@ import BattleComponent from './components/BattleComponent.vue';
 import QuickFactsComponent from './components/QuickFactsComponent.vue';
 import LiveStreamingComponent from './components/LiveStreamingComponent.vue';
 import FeedbackComponent from './components/FeedbackComponent.vue';
+import AdvBanner from './components/AdvBannerComponent.vue';
+
 
 
 
@@ -30,6 +33,7 @@ import FeedbackComponent from './components/FeedbackComponent.vue';
       QuickFactsComponent,
       LiveStreamingComponent,
       FeedbackComponent,
+      AdvBanner,
     }
     
   }

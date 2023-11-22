@@ -51,7 +51,7 @@
 #live-streaming {
     background-image: url('../assets/images/live-streaming-bg.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 
     .video-box{
         position: relative;
