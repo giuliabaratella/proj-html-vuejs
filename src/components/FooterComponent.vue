@@ -2,6 +2,7 @@
 
     <!-- footer  -->
     <footer>
+        <NewsletterComponent/>
         <div class="footer-links">
             <div class="container">
                 <div class="row">
@@ -56,8 +57,12 @@
 
 <script>
 import { store } from '../assets/data/store';
+import NewsletterComponent from './NewsletterComponent.vue';
     export default {
         name:'FooterComponent',
+        components:{
+            NewsletterComponent,
+        },
         data(){
             return{
                 store,
@@ -72,6 +77,7 @@ import { store } from '../assets/data/store';
 footer {
     background-color: $colorDarkBlue;
     margin-top: 200px;
+    position: relative;
     .footer-links{
         padding-top: 200px;
         padding-bottom: 100px;
