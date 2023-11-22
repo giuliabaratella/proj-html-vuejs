@@ -35,6 +35,44 @@ export const store= reactive ({
             title:'Benefits Of Gaming - PC And Video Games',
             img:'/img/articles/blog-item-7.png'
         },
-    ]
+    ],
+    social:[
+        {
+            name:'Youtube',
+            icon:'fa-youtube'
+        },
+        {
+            name:'Twitch',
+            icon:'fa-twitch'
+        },
+        {
+            name:'Facebook',
+            icon:'fa-facebook'
+        },
+        {
+            name:'Instagram',
+            icon:'fa-instagram'
+        }
+    ],
+    QuickLinks:[
+        'Games',
+        'Latest Tournament',
+        'Shop',
+        'Blog',
+        'Contact',
+    ],
+    Help:[
+        'Faqs',
+        'Terms & Conditions',
+        'Privacy',
+    ],
+    FollowUs:[
+        'Facebook',
+        'Twitter',
+        'Instagram',
+        'Youtube',
+        'Github',
+    ],
+    
 
 })

@@ -34,7 +34,9 @@ p{
     color:$colorLight;
     font-size: 1.1em;
 }
-
+ul {
+    padding-left: 0;
+}
 a{
     text-decoration: none;
     color: $colorWhite !important;
