@@ -7,8 +7,11 @@
                 <h4>The Ultimate Competitive Gaming platform</h4>
                 <h2>Make Your Mark On The Battle Field</h2>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum temporibus sapiente sunt, sequi autem optio omnis perspiciatis.</p>
-                <featureCard v-for="feature in features" :title="feature.title" :img="feature.img" :text="feature.text"/>
-                <button>Plan Now</button>
+                <featureCard v-for="feature in store.features" :title="feature.title" :img="feature.img" :text="feature.text"/>
+                <button class="d-flex align-items-center ">
+                            <span class="pe-2">Plan Now</span>
+                            <img src="../assets/images/e-double-right-arrow.svg" alt="arrow icon" class="svg">
+                        </button>
             </div>
             <div class=" features-img-box px-3 w-lg-50">
                 <img src="../assets/images/features-illus.png" alt="Features illustration">
@@ -19,6 +22,7 @@
 </template>
 
 <script>
+import { store } from '../assets/data/store';
 import featureCard from './featureCard.vue';
     export default {
         name: 'FeaturesComponent',
@@ -27,23 +31,7 @@ import featureCard from './featureCard.vue';
         },
         data(){
             return{
-                features:[
-                    {
-                        title: 'Live Streaming',
-                        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
-                        img: '../../src/assets/images/features-icon-1.png'
-                    },
-                    {
-                        title: 'Great Tournament',
-                        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
-                        img: '../../src/assets/images/features-icon-2.png'
-                    },
-                    {
-                        title: 'Gaming News',
-                        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
-                        img: '../../src/assets/images/features-icon-3.png'
-                    },
-                ]
+                store,
             }
         }
     }

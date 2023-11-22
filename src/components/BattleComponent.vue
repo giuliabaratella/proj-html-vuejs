@@ -11,8 +11,11 @@
                 <div class="col-12 col-lg-6" v-for="battle in battles" >
                     <battleCard :img1="battle.team1" :img2="battle.team2" :game="battle.game"/>
                 </div>
-                <div class="col-12 text-center">
-                    <button >View All Match</button>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="d-flex align-items-center">
+                        <span class="pe-2">View All Match</span>
+                        <img src="../assets/images/e-double-right-arrow.svg" alt="arrow icon" class="svg">
+                    </button>
                 </div>
             </div>
         </div>

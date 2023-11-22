@@ -1,6 +1,23 @@
 import {reactive} from 'vue';
 export const store= reactive ({
     playVideo:false,
+    features:[
+        {
+            title: 'Live Streaming',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
+            img: '/img/features/features-icon-1.png'
+        },
+        {
+            title: 'Great Tournament',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
+            img: '/img/features/features-icon-2.png'
+        },
+        {
+            title: 'Gaming News',
+            text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum tempor incididunt ut labor.',
+            img: '/img/features/features-icon-3.png'
+        },
+    ],
     quickFacts:[
         {
             number: 5000,

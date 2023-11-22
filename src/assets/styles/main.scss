@@ -24,6 +24,10 @@ body{
         border-radius: 3px;
     }
 }
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5 {
     font-family: $fontPrimary;
     font-weight: bold;
@@ -56,7 +60,9 @@ section{
     padding-top: 100px;
     padding-bottom: 100px;
 }
-
+.svg{
+    filter: invert(100%);
+}
 // buttons 
 button {
     background-color: $colorPrimary;
@@ -73,6 +79,10 @@ button {
         background-color: $colorHover;
         outline-offset: 4px;
         outline: 1px solid $colorHover;
+        
+    }
+    &:active{
+        transform: scale(1.01);
     }
 }
 .play-btn {

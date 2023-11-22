@@ -2,7 +2,7 @@
     <!-- adv banner  -->
     <div class="row justify-content-center">
         <div class="col-10 banner d-flex flex-column align-items-center justify-content-center">
-            <div class="banner-text d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="banner-text text-center">
                 <h5 class="fw-bold">Make Offer</h5>
                 <h2 class="mb-4">Get 70% Offer Discount</h2>
                 <button>Get Offers</button>
@@ -43,7 +43,6 @@
     .banner-text{
         padding-top: 120px;
         padding-bottom: 120px;
-        padding-left: 50px;
         z-index: 1000;
         button {
             outline: none;

@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="header">
         <div class="container py-4 d-flex justify-content-between align-items-center">
             <div>
                 <img src="../assets/images/logo.png" alt="Futio">
