@@ -5,6 +5,7 @@
   <BattleComponent/>
   <QuickFactsComponent/>
   <LiveStreamingComponent/>
+  <FeedbackComponent/>
 </template>
 
 <script>
@@ -14,6 +15,8 @@ import FeaturesComponent from './components/FeaturesComponent.vue';
 import BattleComponent from './components/BattleComponent.vue';
 import QuickFactsComponent from './components/QuickFactsComponent.vue';
 import LiveStreamingComponent from './components/LiveStreamingComponent.vue';
+import FeedbackComponent from './components/FeedbackComponent.vue';
+
 
 
 
@@ -26,6 +29,7 @@ import LiveStreamingComponent from './components/LiveStreamingComponent.vue';
       BattleComponent,
       QuickFactsComponent,
       LiveStreamingComponent,
+      FeedbackComponent,
     }
     
   }

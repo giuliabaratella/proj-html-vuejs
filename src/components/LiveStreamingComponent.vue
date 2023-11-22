@@ -3,7 +3,7 @@
     <!-- live streaming section  -->
     <section id="live-streaming">
         <div class="container">
-            <div class="row justify-content-center row-gap-4">
+            <div class="row justify-content-center">
                 <div class="col-12 col-lg-8 text-center mb-5">
                     <h4>Live Streaming</h4>
                     <h2>Watch the Streams</h2>
