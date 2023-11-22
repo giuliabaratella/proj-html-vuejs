@@ -11,13 +11,21 @@
                 </div>
                 
                 <div class="row overflow-x-hidden cards-container">
-                    <div class="card-sample col-3">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde pariatur dolore! Quidem magnam obcaecati delectus, iure beatae ad repudiandae?</p>
-                        <div class="d-flex">
-                            <img src="/img/testimonials/testimonials-image-1.png" alt="testimonial" class="pe-3">
-                            <div>Nome</div>
+                    <div class="col-4" v-for="el in store.testimonials">
+                        <div class="card-testimonial">
+                            <i v-for="n in 5" class="fa-solid fa-star mb-4"></i>
+                            <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde pariatur dolore! Quidem magnam obcaecati delectus.</p>
+                            <div class="row">
+                                <img :src="el.img" alt="testimonial" class="pe-3 col-3">
+                                <div class="col">
+                                    <h5 class="test-name">{{el.name}}</h5>
+                                    <div class="test-from">{{ el.from }}</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    
                 </div>
             </div>
         </div>
@@ -25,17 +33,30 @@
 </template>
 
 <script>
+import { store } from '../assets/data/store';
     export default {
         name:'FeedbackComponent',
+        data(){
+            return {
+                store,
+            }
+        }
     }
 </script>
 
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
-.card-sample{
-    background-color: $colorDark;
-    padding: 20px;
+.card-testimonial{
+    background-color: $colorDarkBlue;
+    padding: 30px;
     border-radius: 30px;
+    font-size: 1.1em;
+    .test-from{
+        color:$colorHover;
+    }
+    i{
+        color: $colorLive;;
+    }
 }
 
 </style>

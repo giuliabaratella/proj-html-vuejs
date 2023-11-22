@@ -18,6 +18,24 @@ export const store= reactive ({
             label:'Pro Team'
         },
     ],
+    testimonials:[
+        {
+            name:'Merle Fisher',
+            from:'United States',
+            
+            img:'/img/testimonials/testimonials-image-1.png'
+        },
+        {
+            name:'Garry Francis',
+            from:'Kiribati',
+            img:'/img/testimonials/testimonials-image-2.png'
+        },
+        {
+            name:'Kim Ramos',
+            from:'Serbia',
+            img:'/img/testimonials/testimonials-image-3.png'
+        },
+    ],
     articles:[
         {
             title:'Secrets To An Amazing Role Playing Game',
