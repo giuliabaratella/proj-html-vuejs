@@ -18,5 +18,23 @@ export const store= reactive ({
             label:'Pro Team'
         },
     ],
+    articles:[
+        {
+            title:'Secrets To An Amazing Role Playing Game',
+            img:'/img/articles/blog-item-1.png'
+        },
+        {
+            title:'Top 5 Most Important Aspects Of Your Game',
+            img:'/img/articles/blog-item-5.png'
+        },
+        {
+            title:'The Rise Of Fantasy Sports And Online Games',
+            img:'/img/articles/blog-item-6.png'
+        },
+        {
+            title:'Benefits Of Gaming - PC And Video Games',
+            img:'/img/articles/blog-item-7.png'
+        },
+    ]
 
 })

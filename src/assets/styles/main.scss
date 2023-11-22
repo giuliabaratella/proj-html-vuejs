@@ -18,10 +18,12 @@ body{
 }
 h1, h2, h3, h4, h5 {
     font-family: $fontPrimary;
+    font-weight: bold;
+
 }
 h2 {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3.5em;
 }
 h4 {
     color: $colorHover;

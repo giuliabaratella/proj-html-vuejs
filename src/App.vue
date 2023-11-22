@@ -7,6 +7,7 @@
   <LiveStreamingComponent/>
   <FeedbackComponent/>
   <AdvBanner/>
+  <LatestNewsComponent/>
 </template>
 
 <script>
@@ -18,10 +19,7 @@ import QuickFactsComponent from './components/QuickFactsComponent.vue';
 import LiveStreamingComponent from './components/LiveStreamingComponent.vue';
 import FeedbackComponent from './components/FeedbackComponent.vue';
 import AdvBanner from './components/AdvBannerComponent.vue';
-
-
-
-
+import LatestNewsComponent from './components/LatestNewsComponent.vue';
 
 
   export default {
@@ -34,6 +32,7 @@ import AdvBanner from './components/AdvBannerComponent.vue';
       LiveStreamingComponent,
       FeedbackComponent,
       AdvBanner,
+      LatestNewsComponent,
     }
     
   }
