@@ -5,8 +5,8 @@
         <NewsletterComponent/>
         <div class="footer-links">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
+                <div class="row justify-content-center px-2">
+                    <div class="col-12 col-xl-4 mb-5">
                         <img src="../assets/images/logo.png" alt="Futio logo" class="mb-4">
                         <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, molestiae facilis beatae odit dolore.</p>
                         <div class="d-flex column-gap-2">
@@ -15,25 +15,25 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-5">
                         <h4>Quick Links</h4>
                         <ul>
                             <li v-for="el in store.QuickLinks" class="mb-3"><a href="#" @click.prevent>{{ el }}</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-5">
                         <h4>Help</h4>
                         <ul>
                             <li v-for="el in store.Help" class="mb-3"><a href="#" @click.prevent>{{ el }}</a></li>
                         </ul>
                     </div>
-                    <div class="col-2">
+                    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 mb-5">
                         <h4>Follow Us</h4>
                         <ul>
                             <li v-for="el in store.FollowUs" class="mb-3"><a href="#" @click.prevent>{{ el }}</a></li>
                         </ul>
                     </div>
-                    <div class="col-2 contacts">
+                    <div class="col-12 col-sm-6 col-lg-3 col-xl-2 contacts mb-5">
                         <h4>Contacts</h4>
                         <div class="mb-4">
                             <div class="contact-info">Location:</div>

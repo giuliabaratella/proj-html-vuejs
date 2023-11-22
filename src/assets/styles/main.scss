@@ -15,6 +15,14 @@ body{
     background-color: $colorBlack;
     color: $colorWhite;
     font-family: $fontSecondary;
+    &::-webkit-scrollbar {
+        background-color: $colorScrollbarBg;
+        width: 8px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $colorScrollThumb;
+        border-radius: 3px;
+    }
 }
 h1, h2, h3, h4, h5 {
     font-family: $fontPrimary;

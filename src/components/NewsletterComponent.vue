@@ -7,8 +7,8 @@
         </div>
         <div class="col-12 col-xl-5">
             <div class="form-group input-area d-flex align-items-center">
-                <input type="email" class="form-control" aria-describedby="newsletter" placeholder="Enter your email">
-                <button class="d-flex justify-content-center align-items-center me-2">
+                <input type="email" class="form-control newsletter-mail" aria-describedby="newsletter" placeholder="Enter your email" v-model="inputMail">
+                <button @click="clearForm" class="d-flex justify-content-center align-items-center me-2">
                     <img src="../assets/images/send-icon.png" alt="send icon">
                 </button>
             </div>
@@ -20,6 +20,16 @@
 <script>
     export default {
         name:'NewsletterComponent',
+        data(){
+            return{
+                inputMail:'',
+            }
+        },
+        methods:{
+            clearForm(){
+                this.inputMail = '';
+            }
+        }
 
         
     }
@@ -42,11 +52,14 @@
         background-color: $colorMailNewsletter;
         border-radius: 20px;
         border: 1px solid $colorContrastBlue;
-        .form-control{
+        .newsletter-mail{
             padding: 20px;
             border: none;
             background: transparent;
             color: $colorLight;
+            &:focus{
+                box-shadow: none;
+            }
         }
         button {
             width: 50px;
@@ -55,6 +68,12 @@
             background-color: $colorHover;
         }
     }
+    
+}
+@media screen and (max-width: 991.98px){
+        .newsletter{
+            top:-230px;
+        }
 }
 
 </style>

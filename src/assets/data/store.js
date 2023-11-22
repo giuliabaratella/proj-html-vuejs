@@ -1,5 +1,6 @@
 import {reactive} from 'vue';
 export const store= reactive ({
+    playVideo:false,
     quickFacts:[
         {
             number: 5000,

@@ -1,5 +1,4 @@
 <template>
-
     <!-- live streaming section  -->
     <section id="live-streaming">
         <div class="container">
@@ -10,6 +9,8 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quasi explicabo fuga atque eius nam voluptate ullam consequuntur incidunt.</p>
                 </div>
                 <div class="video-box d-flex justify-content-center col-10">
+                    <VideoPlayer v-if="store.playVideo"/>
+
                     <div class="video-text d-flex">
                         <div class="me-4">
                             <span class="num pe-1">356,599</span>
@@ -27,7 +28,7 @@
                         <span>Live</span>
                     </div>
                     <div class="video-text-center d-flex flex-column align-items-center">
-                        <div class="play-btn mb-3">
+                        <div class="play-btn mb-3" @click="play()">
                             <div class="play-btn-outline"></div>
                             <img src="../assets/images/play-icon.png" alt="play">
                         </div>
@@ -41,8 +42,23 @@
 </template>
 
 <script>
+import { store } from '../assets/data/store';
+import VideoPlayer from './PlayVideoComponent.vue'
     export default {
         name:'LiveStreamingComponent',
+        components:{
+            VideoPlayer,
+        },
+        data(){
+            return{
+                store,
+            }
+        },
+        methods:{
+            play(){
+                this.store.playVideo = true;
+            }
+        }
     }
 </script>
 
@@ -51,7 +67,7 @@
 #live-streaming {
     background-image: url('../assets/images/live-streaming-bg.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 
     .video-box{
         position: relative;
