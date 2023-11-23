@@ -6,10 +6,7 @@
             <h2 class="mb-5">Futio Quick Facts</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4 col-xxl-3" v-for="fact in store.quickFacts">
-                    <div class="fact-card p-5 mb-5 mb-xxl-0">
-                        <h2>{{ fact.number }}</h2>
-                        <h5>{{ fact.label }}</h5>
-                    </div>
+                    <cardNumber :title="fact.label" :num="fact.number"/>
                 </div>
             </div>
         </div>
@@ -18,27 +15,24 @@
 
 <script>
 import {store} from '../assets/data/store';
+import cardNumber from './cardNumber.vue';
     export default {
         name:'QuickFactsComponent',
+        components: {
+            cardNumber,
+        },
         data(){
             return {
                 store,
+                
             }
-        }
+        },
+        
         
     }
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/styles/partials/variables' as *;
 
-.fact-card {
-    border-radius: 60px;
-    text-align: center;
-    border: 1px solid $colorDarkBlue;
-    h5{
-        color: $colorHover;
-    }
-}
 
 </style>

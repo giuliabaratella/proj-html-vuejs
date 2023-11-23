@@ -10,8 +10,8 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quasi explicabo fuga atque eius nam voluptate ullam consequuntur incidunt.</p>
                 </div>
                 <div class="row overflow-x-hidden cards-container">
-                    <div class="col-4" v-for="el in store.testimonials">
-                        <div class="card-testimonial">
+                    <div class="col-12 col-lg-6 col-xl-4" v-for="el in store.testimonials">
+                        <div class="card-testimonial mb-4">
                             <i v-for="n in 5" class="fa-solid fa-star mb-4"></i>
                             <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde pariatur dolore! Quidem magnam obcaecati delectus.</p>
                             <div class="row">

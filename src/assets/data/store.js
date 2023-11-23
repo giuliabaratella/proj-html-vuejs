@@ -63,19 +63,19 @@ export const store= reactive ({
     ],
     quickFacts:[
         {
-            number: 5000,
+            number: 575,
             label:'Twitch streams'
         },
         {
-            number: 85,
+            number: 87,
             label:'Total Games'
         },
         {
-            number: 2000,
+            number: 234,
             label:'Youtube streams'
         },
         {
-            number: 100,
+            number: 42,
             label:'Pro Team'
         },
     ],
