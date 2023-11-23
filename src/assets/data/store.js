@@ -44,6 +44,7 @@ export const store= reactive ({
 
     ],
     menuShow: false,
+    cartShow:false,
     playVideo:false,
     features:[
         {
@@ -156,6 +157,26 @@ export const store= reactive ({
         'Youtube',
         'Github',
     ],
+    shopItems:[
+        {
+            product:'Havit RGB Headphone',
+            price:'$380.00',
+            originalPrice: '$410.00',
+            img: '/img/shop/shop-image-3.png'
+        },
+        {
+            product:'Touch Controller Grip',
+            price:'$380.00',
+            originalPrice: '$410.00',
+            img: '/img/shop/shop-image-7.png'
+        },
+        {
+            product:'Gaming Microphone',
+            price:'$380.00',
+            originalPrice: '$410.00',
+            img: '/img/shop/shop-image-8.png'
+        },
+    ]
     
 
 })

@@ -20,9 +20,12 @@
             </nav>
             <!-- cart & live streaming  -->
             <div class="d-flex column-gap-4 align-items-center">
-              <a href="#" @click.prevent>
-                <img src="../assets/images/cart-icon.png" alt="Cart">
-              </a>
+              <div class="cart-box">
+                  <a href="#" @click.prevent="store.cartShow = !store.cartShow">
+                    <img src="../assets/images/cart-icon.png" alt="Cart">
+                  </a>
+                  <CartComponent v-if="store.cartShow"/>
+              </div>
                 <button>Live Streaming</button>
             </div>
         </div>
@@ -31,8 +34,12 @@
 
 <script>
 import {store} from '../assets/data/store'
+import CartComponent from './CartComponent.vue';
     export default {
         name:'HeaderComponent',
+        components:{
+            CartComponent,
+        },
         data(){
             return{
                 activeIndex:'',
@@ -78,6 +85,15 @@ nav{
                 background-color: $colorDark !important;
             }
         }
+    }
+}
+.cart-box{
+    position: relative;
+    padding: 8px;
+    border: 1px solid $colorWhite;
+    border-radius: 5px;
+    &:hover{
+        border:1px solid $colorPrimary;
     }
 }
 
