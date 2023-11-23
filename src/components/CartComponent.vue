@@ -44,5 +44,6 @@ import itemShop from './itemShop.vue';
     background-color: $colorLighterBlue;
     border-radius: 20px;
     padding: 20px;
+    z-index: 6000;
 }
 </style>

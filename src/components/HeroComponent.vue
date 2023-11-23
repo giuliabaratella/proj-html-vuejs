@@ -48,6 +48,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     position: relative;
+    z-index: 500;
     .controller-bg{
         position: absolute;
         bottom: 220px;
