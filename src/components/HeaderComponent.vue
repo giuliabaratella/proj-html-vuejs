@@ -25,6 +25,7 @@
                     <img src="../assets/images/cart-icon.png" alt="Cart">
                   </a>
                   <CartComponent v-if="store.cartShow"/>
+                  <div class="n-items d-flex align-items-center justify-content-center" v-if="store.shopItems.length > 0">{{ store.shopItems.length}}</div>
               </div>
                 <button>Live Streaming</button>
             </div>
@@ -94,6 +95,19 @@ nav{
     border-radius: 5px;
     &:hover{
         border:1px solid $colorPrimary;
+    }
+    .n-items{
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background-color: $colorPrimary;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: $colorBlack;
+        font-weight: bold;
+        font-size: 0.9em;
+
     }
 }
 
