@@ -1,5 +1,48 @@
 import {reactive} from 'vue';
 export const store= reactive ({
+    menu:[
+        {title: 'Home',
+        sublinks: null,
+        },
+        {title: 'Games',
+        sublinks: [
+            'Games',
+            'Games Details',
+            'Match details',
+        ]
+        },
+        {title: 'Shop',
+        sublinks: [
+            'Shop Single',
+            'Shop Single 2',
+            'Shop Single 3',
+            'Shop Single 4',
+        ]
+        },
+        {title: 'Pages',
+        sublinks: [
+            'About Us',
+            'Team',
+            'Player',
+            'Upcoming Matches',
+            'FAQs',
+            'Privacy Policy',
+            'Terms',
+            'Error',
+        ]
+        },
+        {title: 'Blog',
+        sublinks: [
+            'Blog',
+            'Blog Single',
+        ]
+        },
+        {title: 'Contact',
+        sublinks: null,
+        },
+
+    ],
+    menuShow: false,
     playVideo:false,
     features:[
         {
@@ -61,15 +104,15 @@ export const store= reactive ({
         },
         {
             title:'Top 5 Most Important Aspects Of Your Game',
-            img:'/img/articles/blog-item-5.png'
+            img:'/img/articles/blog-item-2.png'
         },
         {
             title:'The Rise Of Fantasy Sports And Online Games',
-            img:'/img/articles/blog-item-6.png'
+            img:'/img/articles/blog-item-3.png'
         },
         {
             title:'Benefits Of Gaming - PC And Video Games',
-            img:'/img/articles/blog-item-7.png'
+            img:'/img/articles/blog-item-4.png'
         },
     ],
     social:[

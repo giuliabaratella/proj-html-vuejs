@@ -9,7 +9,6 @@
                     <h2>What Our Gamers Say</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quasi explicabo fuga atque eius nam voluptate ullam consequuntur incidunt.</p>
                 </div>
-                
                 <div class="row overflow-x-hidden cards-container">
                     <div class="col-4" v-for="el in store.testimonials">
                         <div class="card-testimonial">

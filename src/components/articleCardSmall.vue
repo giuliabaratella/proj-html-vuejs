@@ -1,9 +1,9 @@
 <template>
-    <div class="article-card">
+    <div class="article-card-sm d-md-flex">
         <div class="article-img-box">
            <img :src="img" alt="article image">
         </div>
-        <div class="article-text p-5">
+        <div class="article-text p-md-4 p-5">
             <div class="row mb-3">
                 <div class="col-3 d-flex align-items-center ">
                     <img src="../assets/images/clock.png" alt="time icon" class="pe-2">
@@ -18,7 +18,7 @@
                     <span>Apr 11,2023</span>
                 </div>
             </div>
-            <h3>{{ title }}</h3>
+            <h4>{{ title }}</h4>
         </div>
 
     </div>
@@ -37,7 +37,7 @@
 <style lang="scss" scoped>
 @use '../assets/styles/partials/variables' as *;
 
-.article-card {
+.article-card-sm {
     background-color: $colorDarkBlue;
     border-radius: 30px;
 
@@ -59,11 +59,26 @@
         span{
             color:$colorHover;
         }
-        h3:hover{
+        h4{
+            color:$colorLight;
+            &:hover{
             cursor: pointer;
+        }
+        }
+    }
+    
+}
+@media screen and (min-width:768px){
+    .article-card-sm{
+    height: 170px;
+        .article-img-box{
+        width: 300px;
+        height: 100%;
         }
     }
 
+    
+    
 }
 
 </style>

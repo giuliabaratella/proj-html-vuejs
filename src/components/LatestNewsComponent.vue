@@ -10,8 +10,14 @@
                 </div>
                 
                 <div class="row justify-content-center row-gap-4 ">
-                   <div class="col-10 col-lg-6" v-for="article in this.store.articles">
-                       <articleCard :title="article.title" :img="article.img"/>
+                    <div class="col-12 col-lg-5 col-xl-6">
+                       <articleCard :title="this.store.articles[0].title" :img="this.store.articles[0].img"/>
+                   </div>
+
+                   <div class="col-12 col-lg-7 col-xl-6">
+                       <div v-for="article in this.store.articles.slice(1)" class="mb-4">
+                           <articleCardSmall :title="article.title" :img="article.img"/>
+                       </div>
                    </div>
                 </div>
             </div>
@@ -22,6 +28,7 @@
 <script>
 import { store } from '../assets/data/store.js';
 import articleCard from './articleCard.vue';
+import articleCardSmall from './articleCardSmall.vue';
     export default {
         data(){
             return{
@@ -31,6 +38,7 @@ import articleCard from './articleCard.vue';
         name:'LatestNewsComponent',
         components:{
             articleCard,
+            articleCardSmall,
         }
         
     }
