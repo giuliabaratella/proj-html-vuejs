@@ -9,7 +9,7 @@
                     <h2>What Our Gamers Say</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quasi explicabo fuga atque eius nam voluptate ullam consequuntur incidunt.</p>
                 </div>
-                <Carousel :autoplay="3000" :items-to-show="3.5" :wrap-around="true">
+                <Carousel :autoplay="3000" v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
                 <slide v-for="(el,index) in store.testimonials" :key="index">
                     <div class="card-testimonial mb-4">
                         <i v-for="n in 5" class="fa-solid fa-star mb-4"></i>
@@ -47,6 +47,21 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
         data(){
             return {
                 store,
+                settings:{
+                    itemsToShow: 1.5
+                },
+                breakpoints:{
+                    700: {
+                        itemsToShow: 1.5 
+                    },
+                    1024: {
+                        itemsToShow: 2.5  
+                    },
+                    1280: {
+                        itemsToShow: 3.5  
+
+                    }
+                }
             }
         }
     }
