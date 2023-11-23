@@ -1,4 +1,5 @@
 <template>
+  <LoaderComponent v-if="store.loading"/>
   <div class="scroll-up d-flex justify-content-center align-items-center">
     <a href="#header"><i class="fas fa-angle-double-up"></i></a>
   </div>
@@ -26,9 +27,7 @@ import FeedbackComponent from './components/FeedbackComponent.vue';
 import AdvBanner from './components/AdvBannerComponent.vue';
 import LatestNewsComponent from './components/LatestNewsComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-
-
-
+import LoaderComponent from './components/LoaderComponent.vue';
 
   export default {
     components:{
@@ -42,11 +41,17 @@ import FooterComponent from './components/FooterComponent.vue';
       AdvBanner,
       LatestNewsComponent,
       FooterComponent,
+      LoaderComponent,
     },
     data(){
       return{
         store,
       }
+    },
+    mounted(){
+      setTimeout(()=>{
+        this.store.loading = false;
+      },2000)
     }
     
   }

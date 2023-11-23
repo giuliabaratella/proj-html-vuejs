@@ -1,5 +1,6 @@
 import {reactive} from 'vue';
 export const store= reactive ({
+    loading:true,
     menu:[
         {title: 'Home',
         sublinks: null,
