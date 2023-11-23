@@ -4,16 +4,16 @@
     <section>
         <div class="container">
             <div class="row justify-content-center ">
-                <div class="col-12 col-lg-8 text-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
                     <h4>Futio Feedback</h4>
                     <h2>What Our Gamers Say</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae quasi explicabo fuga atque eius nam voluptate ullam consequuntur incidunt.</p>
                 </div>
-                <Carousel :autoplay="3000" v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
-                <slide v-for="(el,index) in store.testimonials" :key="index">
-                   <testimonialCard :vote="el.vote" :name="el.name" :img="el.img" :from="el.from"/>
-                </slide>
-            </Carousel>
+                <Carousel :autoplay="3000" v-bind="settings" :breakpoints="breakpoints" :wrap-around="true" class="py-5">
+                    <slide v-for="(el,index) in store.testimonials" :key="index">
+                    <testimonialCard :vote="el.vote" :name="el.name" :img="el.img" :from="el.from"/>
+                    </slide>
+                </Carousel>
             </div>
            
         </div>

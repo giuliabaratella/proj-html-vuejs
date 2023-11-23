@@ -3,8 +3,8 @@
     <!-- features section  -->
     <section id="features">
         <div class="features-text container d-flex flex-column flex-lg-row-reverse align-items-center column-gap-5">
-            <div class="px-3 w-lg-50">
-                <h4>The Ultimate Competitive Gaming platform</h4>
+            <div class="px-3 px-xl-5">
+                <h4>The Ultimate Competitive Gaming Platform</h4>
                 <h2>Make Your Mark On The Battle Field</h2>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero fugit placeat nostrum temporibus sapiente sunt, sequi autem optio omnis perspiciatis.</p>
                 <featureCard v-for="feature in store.features" :title="feature.title" :img="feature.img" :text="feature.text"/>
