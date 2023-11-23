@@ -1,7 +1,7 @@
 <template>
   <LoaderComponent v-if="store.loading"/>
   <div class="scroll-up d-flex justify-content-center align-items-center">
-    <a href="#header"><i class="fas fa-angle-double-up"></i></a>
+    <a href="#" @click.prevent="scrollUp"><i class="fas fa-angle-double-up"></i></a>
   </div>
   <HeaderComponent/>
   <HeroComponent/>
@@ -46,6 +46,11 @@ import LoaderComponent from './components/LoaderComponent.vue';
     data(){
       return{
         store,
+      }
+    },
+    methods:{
+      scrollUp(){
+        window.scrollTo({top:0, behavior:"smooth"});
       }
     },
     mounted(){
