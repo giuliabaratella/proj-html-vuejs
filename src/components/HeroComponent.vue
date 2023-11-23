@@ -10,7 +10,7 @@
                 <div class="hero-text col-12 col-md-7 col-lg-6 pb-5">
                     <h4>Game With Live Streaming</h4>
                     <h2>Future Of Esports</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi dolorum sic.</p>
+                    <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi dolorum sic.</p>
                     <div class="d-flex">
                         <button class="me-4 d-flex align-items-center ">
                             <span class="pe-2">Explore Games</span>

@@ -7,7 +7,7 @@
             </div>
             <!-- nav -->
             <nav class="d-none d-xl-block">
-                <ul class="navbar column-gap-3 ">
+                <ul class="navbar column-gap-3 mb-0">
                     <li v-for="(el,index) in store.menu" :key="index" class="nav-item dropdown">
                         <a class="nav-link" :class="{'dropdown-toggle' : el.sublinks}" href="#" role="button" data-bs-toggle="dropdown-center" aria-expanded="false" @mouseover="showMenu(index)" @click.prevent>
                             {{el.title}}
