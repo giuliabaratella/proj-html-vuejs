@@ -11,19 +11,7 @@
                 </div>
                 <Carousel :autoplay="3000" v-bind="settings" :breakpoints="breakpoints" :wrap-around="true">
                 <slide v-for="(el,index) in store.testimonials" :key="index">
-                    <div class="card-testimonial mb-4">
-                        <i v-for="n in 5" class="fa-solid fa-star mb-4"></i>
-                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati unde pariatur dolore! Quidem magnam obcaecati delectus.</p>
-                        <div class="d-flex align-items-center">
-                            <div class="pe-2 test-img-box">
-                                <img :src="el.img" alt="testimonial">
-                            </div>
-                            <div class="">
-                                <h5 class="test-name">{{el.name}}</h5>
-                                <div class="test-from">{{ el.from }}</div>
-                            </div>
-                        </div>
-                    </div>
+                   <testimonialCard :vote="el.vote" :name="el.name" :img="el.img" :from="el.from"/>
                 </slide>
             </Carousel>
             </div>
@@ -34,6 +22,7 @@
 
 <script>
 import { store } from '../assets/data/store';
+import testimonialCard from './testimonialCard.vue';
 import 'vue3-carousel/dist/carousel.css';
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
     export default {
@@ -43,6 +32,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
             Slide,
             Pagination,
             Navigation,
+            testimonialCard,
         },
         data(){
             return {
@@ -68,27 +58,7 @@ import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
 </script>
 
 <style lang="scss" scoped>
-@use '../assets/styles/partials/variables' as *;
-.card-testimonial{
-    background-color: $colorDarkBlue;
-    padding: 20px;
-    border-radius: 30px;
-    font-size: 1.1em;
-    text-align: left;
-    .test-img-box{
-        width: 50px;
-        height: 50px;
-        img{
-            width: 100%;
-        }
-    }
-    .test-from{
-        color:$colorHover;
-    }
-    i{
-        color: $colorLive;;
-    }
-}
+
 .carousel__slide {
   padding: 10px;
 }

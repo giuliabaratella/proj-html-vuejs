@@ -1,6 +1,6 @@
 <template>
-    <div class="fact-card p-5 mb-5 mb-xxl-0">
-        <h2 @mouseenter="raiseNum(num)">{{ counter }}</h2>
+    <div class="fact-card p-5 mb-5 mb-xxl-0"  @mouseenter="raiseNum(num)">
+        <h2>{{ counter }}</h2>
         <h5>{{ title }}</h5>
     </div>
 </template>

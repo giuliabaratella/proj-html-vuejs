@@ -84,17 +84,20 @@ export const store= reactive ({
         {
             name:'Merle Fisher',
             from:'United States',
+            vote:5,
             
             img:'/img/testimonials/testimonials-image-1.png'
         },
         {
             name:'Garry Francis',
             from:'Kiribati',
+            vote:4,
             img:'/img/testimonials/testimonials-image-2.png'
         },
         {
             name:'Kim Ramos',
             from:'Serbia',
+            vote:2,
             img:'/img/testimonials/testimonials-image-3.png'
         },
     ],
